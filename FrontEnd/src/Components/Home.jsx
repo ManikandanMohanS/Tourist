@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomeImg from "../img/image.png";
+import {Link} from "react-router-dom";
 
 const Home = () => {
   const changeContentRef = useRef(null);
@@ -203,9 +204,12 @@ const Home = () => {
           <p>
             Journey to the world's most breathtaking destinations with our exclusive travel experiences.
           </p>
-          <a href="#book" className="btn btn-book">
+          <Link to="/places" className="btn btn-book">
             Start Adventure
-          </a>
+          </Link>
+          {/* <a href="#book" className="btn btn-book">
+            Start Adventure
+          </a> */}
         </div>
       </div>
     </>
